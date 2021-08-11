@@ -9,19 +9,19 @@ pipeline{
         stage('build'){
             steps{
                 echo 'this is the Build job'
-                sh 'npn install'
+                sh 'npm install'
             }
         }
         stage('test'){
             steps{
                 echo 'this is the test job'
-                sh 'npn test'
+                sh 'npm test'
             }
         }
         stage('package'){
             steps{
                 echo 'this is the package job'
-                sh 'npn run package'
+                sh 'npm run package'
             }
         }
     }
